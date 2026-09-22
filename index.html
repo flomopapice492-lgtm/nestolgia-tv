@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nestolgia TV — Time Machine 2011</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="browser-shell">
+        <header class="browser-header">
+          <div class="traffic-lights" aria-label="window controls">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <div class="browser-title">NESTOLGIA.TV // 2011 ERA MODE</div>
+          <div class="browser-actions">
+            <span>•</span>
+            <span>•</span>
+          </div>
+        </header>
+
+        <div class="browser-toolbar">
+          <div class="toolbar-group nav">
+            <button aria-label="Back">◀</button>
+            <button aria-label="Forward">▶</button>
+          </div>
+          <div class="address-bar">nestolgia.tv/usa-cable/2011/live-guide</div>
+          <div class="toolbar-group info-pill">
+            <span id="eraStamp">2011-06-15</span>
+          </div>
+        </div>
+
+        <div class="app-layout">
+          <aside class="sidebar-panel">
+            <div class="panel-header">
+              <span class="panel-kicker">TIME MACHINE</span>
+              <h2>Era Controls</h2>
+            </div>
+
+            <label class="field-label" for="eraDate">Set the year</label>
+            <input id="eraDate" type="date" value="2011-06-15" />
+
+            <div class="preset-row">
+              <button class="preset active" data-year="2011">2011</button>
+              <button class="preset" data-year="2010">2010</button>
+              <button class="preset" data-year="2009">2009</button>
+              <button class="preset" data-year="2012">2012</button>
+            </div>
+
+            <div class="mini-status">
+              <span class="online-dot"></span>
+              <span>Curated USA cable browsing</span>
+            </div>
+
+            <div class="sidebar-box">
+              <h3>Live-TV Channels</h3>
+              <ul id="channelList" class="channel-list"></ul>
+            </div>
+          </aside>
+
+          <main class="content-panel">
+            <section class="hero-strip">
+              <div class="hero-copy">
+                <span class="eyebrow">RETRO SIGNAL / 2011 EDITION</span>
+                <h1>Channel surfing the way it looked back then.</h1>
+                <p>
+                  Browse a curated 2011 cable landscape, revisit iconic USA network sites,
+                  and jump into a classic HTML5 TV-viewing experience inspired by the era.
+                </p>
+              </div>
+              <div class="hero-clock">
+                <span class="clock-label">Local Time</span>
+                <strong id="liveClock">8:30 PM</strong>
+                <small id="liveDay">Tuesday, June 14, 2011</small>
+              </div>
+            </section>
+
+            <section class="two-column">
+              <div class="panel-box">
+                <div class="section-title-row">
+                  <h3>Live TV Guide</h3>
+                  <span class="chip">USA Cable</span>
+                </div>
+                <div id="channelCards" class="channel-grid"></div>
+              </div>
+
+              <div class="panel-box">
+                <div class="section-title-row">
+                  <h3>Era Websites</h3>
+                  <span class="chip">Curated</span>
+                </div>
+                <div id="siteCards" class="site-list"></div>
+              </div>
+            </section>
+
+            <section class="tv-player-panel">
+              <div class="video-wrap">
+                <video id="tvVideo" controls preload="metadata" playsinline>
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+                </video>
+              </div>
+
+              <div class="video-summary">
+                <div class="network-pill" id="networkBadge">ESPN</div>
+                <h2 id="selectedNetworkTitle">ESPN</h2>
+                <p id="selectedNetworkSummary">
+                  Classic sports coverage and live event energy from the cable era.
+                </p>
+
+                <div class="meta-row">
+                  <span id="airTime">8:30 PM ET</span>
+                  <span id="channelNumber">Ch. 21</span>
+                </div>
+
+                <button id="openSiteBtn" class="primary-btn">Open Era Site</button>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
